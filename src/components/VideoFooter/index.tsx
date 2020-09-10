@@ -5,15 +5,17 @@ import spin from '../../assets/img/spin.png';
 import './styles.css';
 
 interface IVideoFooter {
-  song?: string;
+  channel: string;
+  description: string;
+  song: string;
 }
 
-const VideoFooter = ({ song }: IVideoFooter) => {
+const VideoFooter = ({ channel, description, song }: IVideoFooter) => {
   return (
     <div className="videoFooter">
       <div className="videoFooter__text">
-        <h3>@vbeloti</h3>
-        <p>Description...</p>
+        <h3>{channel}</h3>
+        <p>{description}</p>
         <div className="videoFooter__ticker">
           <MusicNoteIcon className="videoFooter__icon" />
 
@@ -26,7 +28,7 @@ const VideoFooter = ({ song }: IVideoFooter) => {
           </Ticker>
         </div>
       </div>
-      <img src={spin} alt="Spin Icon" className="videoFooter__record"/>
+      <img src={spin} alt="Spin Icon" className="videoFooter__record" />
     </div>
   );
 };
