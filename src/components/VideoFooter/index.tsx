@@ -20,7 +20,7 @@ const VideoFooter = ({ song }: IVideoFooter) => {
           <Ticker mode="smooth">
             {({ index }) => (
               <>
-                <p>{song} song</p>
+                <p>{song}</p>
               </>
             )}
           </Ticker>

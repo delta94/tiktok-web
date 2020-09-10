@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 
 import './styles.css';
 import VideoFooter from '../VideoFooter';
+import VideoSidebar from '../VideoSidebar';
 
 const Video = () => {
   const [playing, setPlaying] = useState(false);
@@ -28,6 +29,7 @@ const Video = () => {
       ></video>
 
       <VideoFooter />
+      <VideoSidebar />
     </div>
   );
 };
